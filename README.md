@@ -1,1 +1,3 @@
-meu portifolio HTML com JavaScript
+meu portifolio HTML, css com JavaScript
+
+UPADO NO VERCELTAMBÉM =)
