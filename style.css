@@ -12,9 +12,11 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
+
+/* cabeçalho */
 
 header {
     background-color: #333;
@@ -36,6 +38,7 @@ header p {
     font-weight: 300;
 }
 
+/* navbar */
 nav ul {
     list-style: none;
     display: flex;
@@ -54,14 +57,40 @@ nav ul li a:hover {
     color: #1a73e8;
 }
 
+
+/* classes do navbar */
+#about {
+    padding-top: 200px; /* Ajuste conforme a altura do header */
+    scroll-margin-top: 0px; /* Impede que a seção fique coberta pelo header */
+}
+
+#experience {
+    scroll-margin-top: 100px; /* Impede que a seção fique coberta pelo header */
+}
+
+#technologies {
+    scroll-margin-top: 100px; /* Impede que a seção fique coberta pelo header */
+}
+
+#contact {
+    scroll-margin-top: 150px; /* Impede que a seção fique coberta pelo header */
+}
+
+#education {
+    margin-bottom: 100px; /* Espaço entre a última seção e o rodapé */
+    scroll-margin-top: 5px; /* Impede que a seção fique coberta pelo header */
+}
+
+
 section {
-    padding: 100px 0; /* Para dar espaço devido ao header fixo */
+    padding: 100px 10px 10px; /* Ajuste conforme a altura do header */
+    scroll-margin-top: 80px; /* Ajuste conforme a altura do header */
 }
 
 h2 {
     font-size: 2em;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -70,12 +99,12 @@ ul {
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: -2px;
 }
 
 ul li:hover {
     background-color: #f0f0f0;
-    padding: 5px;
+    padding: 0px;
     transition: all 0.3s;
 }
 
@@ -98,3 +127,4 @@ footer {
 footer p {
     font-size: 1em;
 }
+
