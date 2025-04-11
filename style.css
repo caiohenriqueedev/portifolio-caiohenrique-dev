@@ -128,3 +128,104 @@ footer p {
     font-size: 1em;
 }
 
+/* Responsividade para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    section {
+        padding: 80px 10px 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Responsividade para telas menores que 768px (celulares grandes e pequenos tablets) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 70px 10px 10px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+/* Responsividade para telas muito pequenas (<480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    header p {
+        font-size: 0.85em;
+    }
+
+    nav ul li a {
+        font-size: 0.95em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
+    footer p {
+        font-size: 0.85em;
+    }
+}
+
