@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-margin-top: 150px;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f2f5;
   color: #222;
   line-height: 1.6;
@@ -22,27 +21,25 @@ body {
 /* Cabeçalho */
 header {
   background: linear-gradient(90deg, #1a1a1a, #2c2c2c);
-  color: #2c2c2c;
+  color: #fff;
   padding: 25px 0;
   text-align: center;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 header h1 {
   font-size: 2.8em;
   letter-spacing: 1px;
-  color: #000000 !important;
 }
 
 header p {
   font-size: 1.1em;
   font-weight: 300;
   opacity: 0.9;
-  color: #000000 !important;
 }
 
 /* Navbar */
@@ -55,7 +52,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #000000;
+  color: #fff;
   text-decoration: none;
   font-size: 1.1em;
   padding: 8px 12px;
@@ -65,34 +62,22 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #1a73e8;
-  color: #000000;
+  color: #fff;
 }
 
 /* Seções */
 section {
-  padding: 120px 15px 40px;
-  scroll-margin-top: 80px;
+  padding: 250px 15px 40px;
+  scroll-margin-top: 30px;
   background-color: #fff;
-  margin: 30px auto;
+  margin: 40px auto;
   border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
 section:hover {
   transform: scale(1.01);
-}
-
-#about,
-#experience,
-#technologies,
-#contact,
-#education {
-  scroll-margin-top: 150px;
-}
-
-#about {
-  padding-top: 250px;
 }
 
 h2 {
@@ -101,53 +86,6 @@ h2 {
   color: #1a1a1a;
   border-left: 5px solid #1a73e8;
   padding-left: 10px;
-}
-
-/* Títulos das seções (h2) - comportamento para tema claro e escuro */
-body.light-theme h2 {
-  color: #121212; /* Cor preta para o tema claro */
-}
-
-body.dark-theme h2 {
-  color: #ffffff; /* Cor branca para o tema escuro */
-}
-
-/* Alterações específicas de "Projeto:" */
-body.light-theme #project {
-  color: #121212; /* Cor preta para o tema claro */
-}
-
-body.dark-theme #project {
-  color: #ffffff; /* Cor branca para o tema escuro */
-}
-
-/* Containers e seções no tema claro */
-body.light-theme .container {
-  background-color: #f0f2f5; /* Cor de fundo cinza claro do tema */
-  color: #121212; /* Texto escuro no tema claro */
-}
-
-/* Seções no tema claro */
-body.light-theme .section {
-  background-color: #f0f2f5; /* Fundo igual ao fundo da página */
-  color: #121212; /* Texto escuro no tema claro */
-}
-
-/* Garantir que o cabeçalho e rodapé também sigam a mesma tonalidade no tema claro */
-body.light-theme header,
-body.light-theme footer {
-  background-color: #f0f2f5; /* Fundo igual ao fundo da página */
-  color: #121212; /* Texto escuro no tema claro */
-}
-
-body.dark-theme .container {
-  background-color: #2f2f2f; /* Fundo cinza escuro para o tema escuro */
-  color: #f4f4f4; /* Texto claro no fundo escuro */
-}
-
-/* Garantir que os textos no header sejam brancos no tema escuro */
-body.dark-theme header {
-  color: #f4f4f4; /* Texto claro */
 }
 
 ul {
@@ -190,213 +128,71 @@ footer p {
   font-size: 1em;
 }
 
-/* Fotos de contatos no rodapé */
-footer .social-links .icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  filter: grayscale(1);
-}
-
-footer .social-links .icon {
-  filter: none; /* Desativa o filtro para as fotos aparecerem */
-}
-
 /* Responsividade */
 @media (max-width: 1024px) {
   .container {
-    width: 85%;
+      width: 85%;
   }
 
   header h1 {
-    font-size: 2.2em;
+      font-size: 2.2em;
   }
 
   nav ul {
-    flex-wrap: wrap;
-    gap: 15px;
+      flex-wrap: wrap;
+      gap: 15px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 92%;
+      width: 92%;
   }
 
   header h1 {
-    font-size: 1.8em;
+      font-size: 1.8em;
   }
 
   header p {
-    font-size: 0.95em;
+      font-size: 0.95em;
   }
 
   nav ul {
-    flex-direction: column;
-    gap: 10px;
+      flex-direction: column;
+      gap: 10px;
   }
 
   section {
-    padding: 90px 15px 30px;
+      padding: 90px 15px 30px;
   }
 
   h2 {
-    font-size: 1.5em;
+      font-size: 1.5em;
   }
 
   footer p {
-    font-size: 0.9em;
+      font-size: 0.9em;
   }
 }
 
 @media (max-width: 480px) {
   header h1 {
-    font-size: 1.5em;
+      font-size: 1.5em;
   }
 
   nav ul li a {
-    font-size: 0.95em;
+      font-size: 0.95em;
   }
 
   h2 {
-    font-size: 1.3em;
+      font-size: 1.3em;
   }
 
   ul li {
-    font-size: 0.9em;
+      font-size: 0.9em;
   }
 
   footer p {
-    font-size: 0.85em;
+      font-size: 0.85em;
   }
-}
-
-/* Temas */
-body.light-theme {
-  background-color: #f4f4f4;
-  color: #121212;
-}
-
-body.light-theme .section,
-body.light-theme header,
-body.light-theme footer {
-  background-color: #ffffff;
-  color: #121212;
-}
-
-body.dark-theme {
-  background-color: #121212;
-  color: #f4f4f4;
-}
-
-body.dark-theme .section,
-body.dark-theme header,
-body.dark-theme footer {
-  background-color: #1e1e1e;
-  color: #f4f4f4;
-}
-
-body.dark-theme .container {
-  background-color: #2f2f2f; /* Fundo cinza escuro nos containers */
-}
-
-body.dark-theme #project {
-  color: #ffffff;
-}
-
-/* Botão de tema - sempre branco */
-#theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-left: 1rem;
-  color: #ffffff !important;
-}
-
-/* Footer */
-footer {
-  background: #2c2c2c;
-  color: white;
-  padding: 30px 0;
-  text-align: center;
-  margin-top: 80px;
-}
-
-footer p {
-  font-size: 1em;
-}
-
-/* Fotos de contatos no rodapé */
-footer .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
-
-footer .social-links a {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-}
-
-footer .social-links .icon {
-  width: 30px;
-  height: 30px;
-  transition: 0.3s ease;
-  filter: none; /* Removendo qualquer filtro para mostrar as imagens de forma natural */
-}
-
-/* Tema claro (matutino) */
-body.light-theme footer {
-  background-color: #f1f1f1; /* Fundo claro no tema claro */
-  color: #121212; /* Texto escuro no tema claro */
-}
-
-body.light-theme footer .social-links a {
-  color: #121212; /* Links escuros no tema claro */
-}
-
-body.light-theme footer .social-links .icon {
-  filter: none; /* Imagens de ícones sem filtro no tema claro */
-  opacity: 1; /* Garantindo que as imagens fiquem visíveis */
-}
-
-/* Tema escuro */
-body.dark-theme footer {
-  background-color: #1e1e1e;
-  color: #f1f1f1;
-}
-
-body.dark-theme footer .social-links a {
-  color: #f1f1f1;
-}
-
-body.dark-theme footer .social-links a:hover {
-  color: #80bfff;
-}
-
-body.dark-theme footer .social-links .icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
-  filter: none; /* Removendo filtro para imagens no tema escuro */
-  opacity: 1; /* Garantindo que as imagens fiquem visíveis */
-}
-
-/* Imagens dos ícones com sombra no tema claro */
-body.light-theme, .dark-theme footer .social-links .icon {
-    filter: none;
-    opacity: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* sombra aplicada */
-    border-radius: 8px; /* opcional, só pra deixar mais suave */
-    transition: transform 0.2s ease;
-}
-
-body.light-theme, .dark-theme footer .social-links .icon:hover {
-    transform: scale(1.05);
 }
